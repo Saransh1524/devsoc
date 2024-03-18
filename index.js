@@ -5,11 +5,18 @@ const registerRoute = require("./routes/register.js");
 const userRoute = require("./routes/user");
 const { checkForAuthenticationCookie } = require("./middlewares/authentication");
 
+var cors = require('cors')
 const app = express();
 
 // Middleware for parsing form data and cookies
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 app.use(cookieParser());
+app.use(cors({
+    origin: 'http://localhost:3000', // Allow requests from this origin
+    credentials: true // Allow credentials (cookies, in this case) to be sent with the request
+  }));
 
 // Middleware for authentication check
 app.use(checkForAuthenticationCookie("token"));
