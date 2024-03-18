@@ -1,0 +1,8 @@
+lucky2004
+
+
+
+// blog schema left for now (modification)
+
+
+"mongodb+srv://saransh_1524:lucky2004@cluster0.gbksivi.mongodb.net/"

@@ -1,0 +1,28 @@
+{
+  "name": "devsoc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krish-1604/DEVSOC-24.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krish-1604/DEVSOC-24/issues"
+  },
+  "homepage": "https://github.com/krish-1604/DEVSOC-24#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.2.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.0"
+  }
+}
